@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="clock-container">
+        <div id="chrono" class="clock">
+          <h3 class="clock-label">Clock 1</h3>
+          <div class="clock-time" id="clock1">00:00:00</div>
+          <button class="btn start-btn" onclick="startClock(1)">Start</button>
+          <button class="btn stop-btn" onclick="stopClock(1)">Stop</button>
+        </div>
+        <br>
+        <div class="clock">
+          <h3 class="clock-label">Clock 2</h3>
+          <div class="clock-time" id="clock2">00:00:00</div>
+          <button class="btn start-btn" onclick="startClock(2)">Start</button>
+          <button class="btn stop-btn" onclick="stopClock(2)">Stop</button>
+        </div>
+        <br>
+      </div>
+      <br>
+      <button class="btn stop-all-btn" onclick="stopAllClocks()">Stop All</button>
+      <button class="btn start-all-btn" onclick="startAllClocks()">Start All</button>
+    
+      <script src="./clock.js"></script>
+</body>
+</html>
